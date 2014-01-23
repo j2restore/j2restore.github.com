@@ -1,55 +1,62 @@
-﻿
-<HTML>
-<META Name="description" Content="AIX Undelete files. AIX jfs2 file recovery.">
-<META Name="keywords" Content=" aix, jfs2, recovery utility, unremoving files, undelete, j2recover, restore, j2restore, data recovery">
-<HEAD>
-<TITLE>j2recover - The AIX jfs2 data recovery tool</TITLE>
-<link rel="stylesheet" type="text/css" href="/css/web.css" />
-</HEAD>
+﻿<!-- 由 Google 结构化数据标记助手添加的微数据标记。 -->
+<html><head><meta name="description" content="AIX Undelete files. AIX jfs2 file recovery."/>
+<meta name="keywords" content=" aix, jfs2, recovery utility, unremoving files, undelete, j2recover, restore, j2restore, data recovery"/>
+
+<title>j2recover - The AIX jfs2 data recovery tool</title>
+<link rel="stylesheet" type="text/css" href="/css/web.css"/>
+</head>
 
 
 <body>
-<div id="page">
+
+<span itemscope itemtype="http://schema.org/SoftwareApplication"><div id="page">
 				<div id="content">
-<h1>AIX JFS2 Data Recovery Tool:  j2recover</h1>
-<hr>
-<p>j2recover is the most powerful tool for jfs2 data recovery in AIX, <br>
+<h1>AIX JFS2 Data Recovery Tool:  
+<span itemprop="name">j2recover</span></h1>
+<hr/>
+<p>j2recover is the most powerful tool for jfs2 
+<span itemprop="applicationCategory">data recovery</span> in 
+<span itemprop="operatingSystem">AIX</span>, 
 which can be used for mounted or unmounted jfs2 file systems.
 </p>
 
 <p>
-When j2recover is used for unmounted file system,<br>
-it will try best to recover inodes in their original location without copy,<br>
-thus greatly improved the performance since it minimized the IO activity,<br>
+When j2recover is used for unmounted file system,
+it will try best to recover inodes in their original location without copy,<br/>
+thus greatly improved the performance since it minimized the IO activity,
 and also greatly saved disk space for restore.
 </p>
 
 <p>
-Sometimes some file systems of production system can not be unmounted when files are wrongly deleted.<br>
-In such case j2recover can be used for mounted file system,<br>
+Sometimes some file systems of production system can not be unmounted when files are wrongly deleted.<br/>
+In such case j2recover can be used for mounted file system,
 and it will copy restored files to specified location.
 </p>
 
 <p>
-Sometimes deleted files maybe has been overwritten by other files.<br>
-But some files(such as text file) might still valuable even it has been partially overwritten.<br>
-j2recover can also restore deleted files even they are partially or totally overwritten.<br>
-And j2recover will report what blocks are overwritten in the file.<br>
+Sometimes deleted files maybe has been overwritten by other files.
+But some files(such as text file) might still valuable even it has been partially overwritten.<br/>
+j2recover can also restore deleted files even they are partially or totally overwritten.
+And j2recover will report what blocks are overwritten in the file.<br/>
 Thus user can check the file content and get those valuable data without overwriting.
 </p>
 
-<hr>
-<b>How to Test j2recover</b><br> 
-1.  <b>Download</b> <a href="/j2recoverlist"><font color="#E21B1B">j2recoverlist</font></a><br> 
-2. Create a new jfs2 file system, and create lots files in this test file system.<br> 
-3. Run "sync;sync;rm -rf *" in test file system.<br> 
-4. Run j2recoverlist to check what j2recover can restore.	<br> 
+<hr/>
+<b>How to Test j2recover</b><br/> 
+1. Download <a itemprop="downloadUrl" href="/j2recoverlist"><font color="#E21B1B">j2recoverlist</font></a><br/> 
+2. Create a new jfs2 file system, and create lots files in this test file system.<br/> 
+3. Run "sync;sync;rm -rf *" in test file system.<br/> 
+4. Run j2recoverlist to check what j2recover can restore.	<br/> 
 </div>
 </div>
-<hr>
+<hr/>
 		<div id="sectionnav">
-	  <b>Email: j2recover@163.com</b>		
-	  <br>
-  	</div>
-</body>
-</HTML>
+				<b>Download: </b><a href="/j2recoverlist"><font color="#E21B1B">j2recoverlist</font></a>
+				<br/> 
+	  <b>Email: 
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<span itemprop="name">j2recover@163.com</span></span></b>		
+	  <br/>
+  	</div></span>
+
+</body></html>
